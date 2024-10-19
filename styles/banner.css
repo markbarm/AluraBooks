@@ -35,6 +35,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .banner{
+        padding: 6em 2em;
+    }
+
     .banner__titulo{
         font-size: 36px;
     }
