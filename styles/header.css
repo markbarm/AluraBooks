@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding-left: 1em;
 
 }
 
@@ -104,5 +105,18 @@
 
     .cabeçalho__menu-hamburguer{
         display: none;
+    }
+    
+    .cabeçalho{
+        padding: 0 3%;
+    }
+
+    .opções__botão{
+        display: none;
+    }
+
+    .opções__botão:checked ~ .lista-menu{
+        display: block;
+        width: auto;
     }
 }
