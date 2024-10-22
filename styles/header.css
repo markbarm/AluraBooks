@@ -1,8 +1,10 @@
 .cabeçalho__menu-hamburguer {
+    display: inline-block;
     width: 24px;
     height: 24px;
+    margin-left:1em;
+
     background-image: url("../img/Menu.svg");
-    display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -13,7 +15,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-left: 1em;
 
 }
 
@@ -93,6 +94,7 @@
     .opções__item{
         padding: 0 1em;
         text-transform: uppercase;
+        
     }
 
     .opções__link{
