@@ -8,6 +8,11 @@
     padding: 1em 0 0.5em 0;
 }
 
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
 .swiper-slide img {
     width: 100%;
 }
@@ -15,30 +20,6 @@
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
-}
-
-.swiper-pagination {
-    position: initial;
-    margin: .5em 0;
-}
-
-.descrição {
-    padding: 0 .5em;
-}
-
-.card__descrição {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: .5em;
-}
-
-.card__botões {
-    display: flex;
-    justify-content: space-between;
-}
-
-.botões {
-    display: flex;
 }
 
 .card {
@@ -49,21 +30,45 @@
     padding: 1em;
 }
 
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+.descrição {
+    padding: 0 .5em;
+}
+
 .descrição__titulo {
     color: var(--laranja);
     font-weight: 700;
+    font-size: 18px;
 }
 
 .descrição__titulo-livro {
     color: var(--azul);
     font-size: 18px;
     font-weight: 700;
-    margin: .5em 0;
-
+    margin: 1em 0;
 }
 
 .descrição__texto {
     font-size: 14px;
+}
+
+.descrição__imagem{
+    height: 162px;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botões {
+    display: flex;
 }
 
 .botões__item {
@@ -72,7 +77,7 @@
 
 .botões__ancora {
     background-color: var(--laranja);
-    padding: 1em 2.2em;
+    padding: 1em 2em;
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
@@ -93,7 +98,7 @@
     }
 
     .swiper-slide {
-        padding: 0 1em;
+        padding: 0 2em;
     }
 
     .swiper-button-prev,
@@ -105,5 +110,34 @@
     .card{
         width: 50%;
         margin: 3em auto; 
+    }
+}
+
+@media screen and (min-width:1728px){
+    .carrossel__container{
+        display: flex;
+        margin: 5em 10vw;
+    }
+
+    .swiper-pagination{
+        margin: 0 0 1em 0;
+    }
+
+
+    .card{
+        width: 40%;
+        margin-left: 6em;
+    }
+
+    .descrição{
+        padding-right: 2em;
+    }
+
+    .descrição__titulo{
+        font-size: 36px;
+    }
+
+    .descrição__texto{
+        font-size: 16px;
     }
 }
